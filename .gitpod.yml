@@ -1,0 +1,18 @@
+vscode:
+  extensions:
+    - PKief.material-icon-theme
+
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: 'Setup'
+    init: npm init wdio . -- --yes
+
+ports:
+  - port: 5900
+    onOpen: ignore
+  - port: 6080
+    onOpen: open-browser
+  - port: 10000
+    onOpen: ignore
