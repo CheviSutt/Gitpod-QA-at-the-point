@@ -23,3 +23,15 @@
     ```
 
     > 💡 If using Gitpod, open Port `6080` to see the test(s) running
+
+## Where to look first
+
+Opening an existing project can be daunting, but there are a few places to look first to get a handle on what's going on.
+
+> 💡 By default, WDIO uses the `PageObject` and `spec` patterns along with the `Mocha` test framework for their Automation.
+
+- The `/test` directory would be the first place to look for things that matter:
+  - `/pageobjects` - the "Page Object" files
+  - `/specs` - the test files that use the Page Objects
+
+- The `wdio.conf.js` configuration file is where you can define settings for your test automation
