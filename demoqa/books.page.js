@@ -11,16 +11,18 @@ class BooksPage {
         return this.table.$$('[role=rowgroup] img')
     }
 
-    open() {
-        return browser.url('/books')
+    async open() {
+        return browser.url('https://demoqa.com/books')
     }
 
-    getRowByIndex(index=0) {
+    async getRowByIndex(index=0) {
         return this.tableRows[index]
     }
 
-    search(query) {
+    async search(query) {
         $('#searchBox').setValue(query)
         return this
     }
 }
+
+export default new BooksPage();
