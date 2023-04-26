@@ -5,7 +5,7 @@ export const config = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
-    
+
     //
     // ==================
     // Specify Test Files
@@ -45,14 +45,14 @@ export const config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 4,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-    
+
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
@@ -99,7 +99,7 @@ export const config = {
     baseUrl: 'http://localhost',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 60000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
@@ -113,7 +113,7 @@ export const config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
-    
+
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
@@ -137,7 +137,7 @@ export const config = {
     reporters: ['spec'],
 
 
-    
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/

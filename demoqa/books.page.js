@@ -20,8 +20,7 @@ class BooksPage {
     }
 
     async search(query) {
-        $('#searchBox').setValue(query)
-        return this
+        await $('#searchBox').setValue(query)
     }
 }
 
