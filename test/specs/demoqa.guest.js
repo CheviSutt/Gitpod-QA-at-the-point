@@ -1,9 +1,9 @@
 import BooksPage from '../../demoqa/books.page.js'
 
 
-describe('Guest behaviors', () => {
+describe('Guest features', () => {
     before(async () => {
-        await BooksPage.open()
+        await BooksPage.visit()
     })
 
     it('view initial list of books', async () => {

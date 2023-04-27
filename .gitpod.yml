@@ -6,8 +6,8 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - name: 'Setup'
-    init: npm init wdio . -- --yes
+  - name: "Setup"
+    init: npm install
 
 ports:
   - port: 5900

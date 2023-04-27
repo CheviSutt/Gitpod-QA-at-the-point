@@ -11,8 +11,8 @@ class BooksPage {
         return this.table.$$('[role=rowgroup] img')
     }
 
-    async open() {
-        return browser.url('https://demoqa.com/books')
+    async visit() {
+        await browser.url('/books')
     }
 
     async getRowByIndex(index=0) {
@@ -21,6 +21,10 @@ class BooksPage {
 
     async search(query) {
         await $('#searchBox').setValue(query)
+    }
+
+    async gotoLogin() {
+        await $('#login').click()
     }
 }
 
