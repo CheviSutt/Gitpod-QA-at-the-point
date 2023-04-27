@@ -25,9 +25,17 @@ export const config = {
     specs: [
         './test/specs/**/*.js'
     ],
+    suites: {
+        demoqa: [
+            './test/specs/demoqa.*.js'
+        ],
+        sauce: [
+            './test/specs/sauce.*.js'
+        ]
+    },
     // Patterns to exclude.
     exclude: [
-        // 'path/to/excluded/files'
+        // './test/specs/demoqa.*.js'
     ],
     //
     // ============
