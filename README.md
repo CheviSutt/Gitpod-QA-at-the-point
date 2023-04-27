@@ -4,22 +4,16 @@
 
 > 💡 Skip to `Step 2` if using Gitpod
 
-1. Initialize WDIO in the project
+1. After cloning, install dependencies:
 
     ```bash
-    # defaults
-    npm init wdio . -- --yes
-    ```
-
-    ```bash
-    # or go through the Setup Wizard manually
-    npm init wdio
+    npm install
     ```
 
 2. Run the example tests
 
     ```bash
-    npm run wdio --spec example.e2e.js
+    npm run wdio
     ```
 
     > 💡 If using Gitpod, open Port `6080` to see the test(s) running
@@ -31,14 +25,14 @@ Opening an existing project can be daunting, but there are a few places to look 
 > 💡 By default, WDIO uses the `PageObject` and `spec` patterns along with the `Mocha` test framework for their Automation.
 
 - The `/test` directory would be the first place to look for things that matter:
-  - `/pageobjects` - the "Page Object" files
   - `/specs` - the test files that use the Page Objects
+
+- In this project, we are testing [DemoQA.com](https://demoqa.com/books), so look at the `/demoqa` directory
+  - `/demoqa` - any files, like Page Objects, that are relevant to our web app
 
 - The `wdio.conf.js` configuration file is where you can define settings for your test automation
 
 ## Debug Mode
-
-> You need to have the `launch.json` in your `.vscode` folder
 
 In VS Code, you can turn on debugging via the Command Palette:
 
