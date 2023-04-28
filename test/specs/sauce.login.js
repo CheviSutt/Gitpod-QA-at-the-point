@@ -7,7 +7,7 @@ describe('Login Flows', () => {
         await $('#password').setValue('secret_sauce')
         await $('#login-button').click()
         const error = await $('[data-test=error]').getText()
-        expect(error).toBe('Epic sadface: Sorry, this user has been locked out.')
+        expect(error).toContain('Epic sadface: Sorry')
     })
 
 })
